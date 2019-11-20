@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .row::after {
+    clear: both;
+    display: table;
+  }
+  
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+  
+  html {
+    font-family: "Comic Sans MS", "Comic Sans", cursive; 
+  }
+  
+  .header {
+    color:black;
+    text-align: center;
+    padding-top: 2em;
+  }
+
+  .content{
+      padding-top: 1.5em ;
+      padding-left: 1em ;
+      padding-right: 1em ;
+  }
+  
+  .sheet {
+    position: relative;
+    background-color:rgb(141, 135, 135);
+    color: black;
+    border-style: solid;
+    border-color: black;
+  }
+
+  .aside{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display:block;
+    border-bottom: solid black;
+    border-left: solid black;
+    position: absolute;
+    right: 0px;
+    text-align: center;
+    width: 50%;
+    height: 2   em;
+  }
+
+  .aside-chicken{
+    background: peachpuff;
+    color: black;
+  }
+
+  .aside-beef{
+    background: red;
+    color: white;
+  }
+
+  .aside-sushi{
+    background: yellow;
+    color: black;
+  }
+  
+
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    /* For tablets: */
+    .col-s-1 {width: 50%;}
+    .col-s-2 {width: 100%;}
+  }
+  @media only screen and (min-width: 992px) {
+    /* For desktop: */
+    .col-1 {width: 33.33%;}
+  }
